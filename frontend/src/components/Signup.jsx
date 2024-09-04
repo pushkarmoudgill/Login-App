@@ -19,7 +19,7 @@ const Signup=()=>{
     //         },[])
     const collectData=async()=>{
       //  console.warn(name,username,password);
-        let result =await fetch('http://localhost:8081/signup',{
+        let result =await fetch('https://login-app-snol.vercel.app/signup',{
             method:'post',
             body:JSON.stringify({name,username,password}),
             headers:{
