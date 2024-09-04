@@ -33,7 +33,7 @@ const auth =localStorage.getItem('user');
     
     const handleLogin= async()=>{
         //console.warn(username,password)
-        let result =await fetch('http://localhost:8081/login',{
+        let result =await fetch('https://login-app-snol.vercel.app/login',{
            method:'post',
            body:JSON.stringify({username,password}),
            headers:{
